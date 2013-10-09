@@ -140,6 +140,6 @@ call s:hi("Underlined",   {"gui": "undercurl", "cterm": "underline"})
 call s:hi("Ignore",       {"fg": s:grey1})
 call s:hi("Error",        {"fg": s:white, "bg": s:red2, "gui": "bold", "cterm": "bold"})
 
-call s:hi("Todo",         {"fg": s:white, "bg": s:yellow2})
+call s:hi("Todo",         {"fg": s:black, "bg": s:yellow2})
 
 "vim: sw=4
