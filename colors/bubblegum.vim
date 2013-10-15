@@ -58,24 +58,6 @@ function! s:hi(group, style)
         \ "cterm="   (has_key(a:style, "cterm") ? a:style.cterm    : "NONE")
 endfunction
 
-" Color terminal definitions
-"0              Black
-"1              DarkRed
-"2              DarkGreen
-"3              Brown, DarkYellow
-"4              DarkBlue
-"5              DarkMagenta
-"6              DarkCyan
-"7              LightGray, LightGrey, Gray, Grey
-"8              DarkGray, DarkGrey
-"9              Red, LightRed
-"10             Green, LightGreen
-"11             Yellow, LightYellow
-"12             Blue, LightBlue
-"13             Magenta, LightMagenta
-"14             Cyan, LightCyan
-"15             White
-
 " Highlight groups
 if version >= 700
   call s:hi("CursorLine",   {"gui": "bold", "cterm": "bold"})
