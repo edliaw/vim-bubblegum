@@ -65,7 +65,7 @@ if version >= 700
   call s:hi("ColorColumn",  {"gui": "reverse", "cterm": "reverse"})
 endif
 
-call s:hi("Normal",       {"fg": s:white, "bg": s:black})
+call s:hi("Normal",       {"fg": s:white})
 " CursorIM    
 call s:hi("Directory",    {"fg": s:cyan1})
 call s:hi("DiffAdd",      {"fg": s:black, "bg": s:green2})
