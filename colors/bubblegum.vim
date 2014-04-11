@@ -21,29 +21,31 @@ let g:colors_name="bubblegum"
 
 " Color map
 let s:white    = {"gui": "#FFFFFF", "cterm": "15"}
-let s:black    = {"gui": "#141414", "cterm": "0"}
-let s:blue0    = {"gui": "#99BBFF", "cterm": "12"}
-let s:blue1    = {"gui": "#6699FF", "cterm": "4"}
-let s:blue2    = {"gui": "#2970FF", "cterm": "4"}
-let s:cyan0    = {"gui": "#99EEFF", "cterm": "14"}
-let s:cyan1    = {"gui": "#66E6FF", "cterm": "6"}
-let s:green0   = {"gui": "#BBFF99", "cterm": "10"}
-let s:green1   = {"gui": "#99FF66", "cterm": "2"}
-let s:green2   = {"gui": "#66FFCC", "cterm": "2"}
-let s:grey0    = {"gui": "#999999", "cterm": "7"}
-let s:grey1    = {"gui": "#DFDFDF", "cterm": "8"}
-let s:grey2    = {"gui": "#3C3C3C", "cterm": "8"}
-let s:orange0  = {"gui": "#FFC95C", "cterm": "11"}
-let s:orange1  = {"gui": "#FFB829", "cterm": "3"}
-let s:magenta0 = {"gui": "#DD99FF", "cterm": "13"}
-let s:magenta1 = {"gui": "#CC66FF", "cterm": "5"}
-let s:magenta2 = {"gui": "#7F66FF", "cterm": "5"}
-let s:red0     = {"gui": "#FF99BB", "cterm": "9"}
-let s:red1     = {"gui": "#FF6699", "cterm": "1"}
-let s:red2     = {"gui": "#FF7F66", "cterm": "1"}
-let s:yellow0  = {"gui": "#FFDD99", "cterm": "11"}
-let s:yellow1  = {"gui": "#FFCC66", "cterm": "3"}
-let s:yellow2  = {"gui": "#E6FF66", "cterm": "3"}
+let s:black    = {"gui": "#222222", "cterm": "0"}
+let s:blue0    = {"gui": "#A3D1FE", "cterm": "12"}
+let s:blue1    = {"gui": "#65BCFE", "cterm": "4"}
+let s:blue2    = {"gui": "#58A4DE", "cterm": "4"}
+let s:cyan0    = {"gui": "#A3FEE6", "cterm": "14"}
+let s:cyan1    = {"gui": "#65FEDC", "cterm": "6"}
+let s:cyan2    = {"gui": "#58DEC0", "cterm": "6"}
+let s:green0   = {"gui": "#B5FEA3", "cterm": "10"}
+let s:green1   = {"gui": "#8CFE65", "cterm": "2"}
+let s:green2   = {"gui": "#7ADE58", "cterm": "2"}
+let s:grey0    = {"gui": "#CBCBCB", "cterm": "7"}
+let s:grey1    = {"gui": "#AAAAAA", "cterm": "8"}
+let s:grey2    = {"gui": "#7D7D7D", "cterm": "8"}
+let s:orange0  = {"gui": "#FEB1A3", "cterm": "11"}
+let s:orange1  = {"gui": "#FE8465", "cterm": "3"}
+let s:orange2  = {"gui": "#DE7358", "cterm": "3"}
+let s:magenta0 = {"gui": "#CEA3FE", "cterm": "13"}
+let s:magenta1 = {"gui": "#B765FE", "cterm": "5"}
+let s:magenta2 = {"gui": "#A058DE", "cterm": "5"}
+let s:red0     = {"gui": "#FEA3E9", "cterm": "9"}
+let s:red1     = {"gui": "#FE65E1", "cterm": "1"}
+let s:red2     = {"gui": "#DE58C5", "cterm": "1"}
+let s:yellow0  = {"gui": "#FEFCA3", "cterm": "11"}
+let s:yellow1  = {"gui": "#FEFC65", "cterm": "3"}
+let s:yellow2  = {"gui": "#DEDC58", "cterm": "3"}
 
 
 " Utility function
@@ -66,7 +68,7 @@ if version >= 700
 endif
 
 call s:hi("Normal",       {"fg": s:white})
-" CursorIM    
+" CursorIM
 call s:hi("Directory",    {"fg": s:cyan1})
 call s:hi("DiffAdd",      {"fg": s:black, "bg": s:green2})
 call s:hi("DiffChange",   {"fg": s:black, "bg": s:yellow2})
@@ -76,13 +78,13 @@ call s:hi("ErrorMsg",     {"fg": s:white, "bg": s:red2, "gui": "bold", "cterm": 
 call s:hi("Folded",       {"fg": s:black, "bg": s:grey2})
 call s:hi("FoldColumn",   {"fg": s:black, "bg": s:grey2})
 call s:hi("IncSearch",    {"fg": s:black, "bg": s:green2})
-" Menu        
+" Menu
 call s:hi("ModeMsg",      {"fg": s:yellow1})
 call s:hi("MoreMsg",      {"fg": s:green1})
 call s:hi("NonText",      {"fg": s:blue1, "gui": "bold", "cterm": "bold"})
 call s:hi("LineNr",       {"fg": s:yellow1})
 call s:hi("Question",     {"fg": s:green0})
-" Scrollbar   
+" Scrollbar
 call s:hi("Search",       {"fg": s:black, "bg": s:blue2})
 call s:hi("SpecialKey",   {"fg": s:green1})
 call s:hi("StatusLine",   {"gui": "bold,reverse", "cterm": "bold,reverse"})
@@ -90,7 +92,7 @@ call s:hi("StatusLineNC", {"gui": "reverse", "cterm": "reverse"})
 call s:hi("TabLine",      {"fg": s:black, "bg": s:grey2})
 call s:hi("TabLineSel",   {"gui": "bold", "cterm": "bold"})
 call s:hi("Title",        {"fg": s:blue0})
-" Tooltip     
+" Tooltip
 call s:hi("VertSplit",    {"gui": "reverse", "cterm": "reverse"})
 call s:hi("Visual",       {"gui": "reverse", "cterm": "reverse"})
 call s:hi("VisualNOS",    {"gui": "bold,undercurl", "cterm": "bold,underline"})
